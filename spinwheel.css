@@ -1,0 +1,32 @@
+.container {
+    background-color: navy;
+    text-align: center;
+    margin-top: 50px;
+    position: relative; /* Make the container relative for absolute positioning */
+}
+
+canvas {
+    background-color: aqua;
+    color: navy;
+    border: 2px solid black;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#balance {
+    position: absolute; /* Position the balance absolutely */
+    top: 20px; /* Adjust top position */
+    left: 20px; /* Adjust left position */
+    font-weight: bold;
+}
+#wheelCanvas {
+    display: block;
+    margin: 0 auto;
+}
+#betSpinButton {
+    background-color: navy;
+    color: burlywood;
+    display: block;
+    margin: 10px auto;
+}

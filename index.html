@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet Wheel Game</title>
+    <link rel="stylesheet" href="spinwheel.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: cursive ;">Spin The Wheel Game</h1>
+        <div id="balance">Balance: 5000</div> <!-- Display balance here -->
+        <canvas id="wheelCanvas" width="400" height="400"></canvas>
+        <button id="betSpinButton">Spin</button>
+        <div id="betAmount">
+            <label for="bet">Enter Bet Amount:</label>
+            <input type="number" id="bet" name="bet" min="1000" value="1000">
+        </div>
+        <div id="result"></div>
+        <div id="balance">Balance: 5000</div>
+         <!-- Option to choose between playing as a bot or a player -->
+         <div id="playerType">
+            <input type="radio" id="playerRadio" name="playerType" value="player" checked>
+            <label for="player">Player</label>
+            <input type="radio" id="botRadio" name="playerType" value="bot">
+            <label for="bot">Bot</label>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+
+    <script src="spinwheel.js"></script>
+</body>
+</html>
